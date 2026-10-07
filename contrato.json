@@ -19,7 +19,7 @@
     "fuso": "-03:00",
     "base_url_suite": "http://localhost:{PORTA_API}",
     "sem_env_obrigatoria": true,
-    "observacao": "A suíte sobe o container com `docker run -p {PORTA_API}:8080` e aguarda GET /healthz responder 200. `PORT` (opcional) sobrescreve a porta interna apenas para testes locais."
+    "observacao": "A suíte sobe o container com `docker run -p {PORTA_API}:9201` e aguarda GET /healthz responder 200. `PORT` (opcional) sobrescreve a porta interna apenas para testes locais."
   },
   "endpoints": [
     {
@@ -38,7 +38,7 @@
       "descricao": "Imprime uma saudacao em texto puro. É o coração do hello world: a suíte chama este endpoint com os parâmetros DA SUA VARIANTE e confere o texto exato.",
       "requisicao": {
         "query": {
-          "nome": "obrigatório — quem recebe a saudação",
+          "nome": "QA",
           "saudacao": "opcional — default 'QA'",
           "sufixo": "opcional — default '!'",
           "repeticoes": "opcional — default 1 — inteiro entre 1 e 10"
