@@ -39,7 +39,7 @@
       "requisicao": {
         "query": {
           "nome": "obrigatório — quem recebe a saudação",
-          "saudacao": "opcional — default 'Ola'",
+          "saudacao": "opcional — default 'QA'",
           "sufixo": "opcional — default '!'",
           "repeticoes": "opcional — default 1 — inteiro entre 1 e 10"
         }
